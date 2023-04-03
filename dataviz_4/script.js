@@ -29,28 +29,3 @@
   })
     d3.select('#chart').append(() => chart)
 })
-
-
-Plot.plot({
-  marks: [
-    Plot.barY(
-      data,
-      Plot.groupX({ y: "sum" }, { x: "brand", y: "price_in_usd" })
-    )
-  ],
-  height: 200,
-  marginLeft: 50,
-  width: 666
-})
-
-Plot.plot({
-  marks: [
-    Plot.barY(
-      data,
-      Plot.groupX({ y: "max" }, { x: "brand", y: "price_in_usd" })
-    )
-  ],
-  height: 200,
-  marginLeft: 50,
-  width: 666
-})
