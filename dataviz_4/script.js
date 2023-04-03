@@ -2,16 +2,55 @@
   d3.csv('astronautas.csv', d3.autoType).then(data => {
     let chart = Plot.plot({
     marks: [
-      Plot.barY(data, {
+      Plot.barY(data, 
+        Plot.groupX({ y: "max" },
+        {
         x: 'anio_mision',
         y: 'mision_hs',
         fill: 'ocupacion',
-        sort: 'ocupacion',
-        title: d => d.country + '\n' + d.pop,
-      }),
+        sort: 'ocupacion', 
+      })),
     ],
-    marginLeft: 70,
-    width: 600,
+    style: {
+      backgroundColor: "#877570",
+      color: "#e5fffa",
+      fontFamily: "system-ui",
+      fontSize: "11px",
+      overflow: "visible"
+    },
+    nice: true,
+    line: true,
+    color: {
+      legend: true,
+    },
+    margin: 60,
+    marginLeft: 60,
+    width: 800,
   })
     d3.select('#chart').append(() => chart)
+})
+
+
+Plot.plot({
+  marks: [
+    Plot.barY(
+      data,
+      Plot.groupX({ y: "sum" }, { x: "brand", y: "price_in_usd" })
+    )
+  ],
+  height: 200,
+  marginLeft: 50,
+  width: 666
+})
+
+Plot.plot({
+  marks: [
+    Plot.barY(
+      data,
+      Plot.groupX({ y: "max" }, { x: "brand", y: "price_in_usd" })
+    )
+  ],
+  height: 200,
+  marginLeft: 50,
+  width: 666
 })
