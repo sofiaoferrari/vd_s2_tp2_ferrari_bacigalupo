@@ -7,7 +7,7 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       )
     ],
     style: {
-      backgroundColor: "#7e9a9a",
+      backgroundColor: "#0E6251",
       color: "#e5fffa",
       fontFamily: "system-ui",
       fontSize: "14px",

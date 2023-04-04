@@ -13,20 +13,24 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       Plot.frame(),
     ],
     style: {
-      backgroundColor: "#7e9a9a",
+      backgroundColor: "#212F3D",
       color: "#e5fffa",
       fontFamily: "system-ui",
-      fontSize: "11px",
+      fontSize: "14px",
       overflow: "visible"
     },
+    margin:45, 
     grid: true,
     nice: true,
     line: true,
     color: {
       legend: true,
+      style: {
+        fontSize: "14px",
+      }
     },
     width: 1300,
-    height: 300,
+    height: 350,
     marginLeft: 60,
     marginTop: 60,
     r: { range: [0, 22] },
