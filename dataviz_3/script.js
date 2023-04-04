@@ -13,15 +13,16 @@ d3.csv('astronautas.csv', d3.autoType).then(data => {
       fontSize: "14px",
       overflow: "visible"
     },
-    margin:50, 
-    height: 500,
-    widht: 500,
+    width: 1000,
+    height: 600,
     marginLeft: 200,
-    y: {
-      
-    },
+    marginTop: 60,
+    marginBottom: 60,
+    line: true,
+
     x: {
       grid: true,
+      ticks: 6,
     }
   })
   d3.select('#chart').append(() => chart)
