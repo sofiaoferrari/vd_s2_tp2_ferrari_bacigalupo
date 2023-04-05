@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
 
 *{
+
   background-color: #412F3D;
   color: white; 
   font-family: 'Montserrat', sans-serif;  
@@ -8,7 +9,7 @@
 
 h1{
   font-size: 40px;
-  padding: 40px 40px 10px 100px;
+  padding: 80px 40px 10px;
   font-weight: bold;
   text-align: center;
 }
@@ -21,15 +22,18 @@ h1{
   }
   
   .button {
+    width: 500px;
+    height: 60px;
     background-color: rgb(215, 153, 153);
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 15px 37px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 12px;
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 2px 2px 5px #888888;
