@@ -2,11 +2,11 @@
     let chart = Plot.plot({
     marks: [
       Plot.barY(data, 
-        Plot.groupX({ y: "max" },
+        Plot.groupX({y: "sum"},
         {
         x: 'anio_mision',
         y: 'mision_hs',
-        fill: 'ocupacion',
+        fill: "#94B668",
         sort: 'ocupacion', 
       })),
     ],
